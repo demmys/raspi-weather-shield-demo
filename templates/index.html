@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>MEAS Pi Weather Shield DEMO</title>
+    <script type="text/javascript" src="{{url_for('static', filename='jquery-3.3.1.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='index.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}" />
+  </head>
+  <body>
+    <h1>MEAS Pi Weather Shield DEMO</h1>
+    <div>
+      <section>
+        <h2>HTU21D</h2>
+        <article>
+          <h3>temperature</h3>
+          <p><span id='htu21d-t'>#</span> °C</p>
+        </article>
+        <article>
+          <h3>humidity</h3>
+          <p><span id='htu21d-h'>#</span> %</p>
+        </article>
+      </section>
+      <section>
+        <h2>MS5637</h2>
+        <article>
+          <h3>temperature</h3>
+          <p><span id='ms5637-t'>#</span> °C</p>
+        </article>
+        <article>
+          <h3>pressure</h3>
+          <p><span id='ms5637-p'>#</span> hPa</p>
+        </article>
+      </section>
+      <section>
+        <h2>TSYS01</h2>
+        <article>
+          <h3>temperature</h3>
+          <p><span id='tsys01-t'>#</span> °C</p>
+        </article>
+      </section>
+      <section>
+        <h2>TSD305</h2>
+        <article>
+          <h3>temperature</h3>
+          <p><span id='tsd305-t'>#</span> °C</p>
+        </article>
+        <article>
+          <h3>object temperature</h3>
+          <p><span id='tsd305-o'>#</span> °C</p>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>
